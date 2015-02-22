@@ -43,8 +43,8 @@
     <Compile Include="Primatives\GeometryObject.cs" />
     <Compile Include="Primatives\IGeometryObject.cs" />
     <Compile Include="Primatives\Line.cs" />
-    <Compile Include="Primatives\Point.cs" />
-    <Compile Include="Primatives\Vector.cs" />
+    <Compile Include="Primatives\Point3.cs" />
+    <Compile Include="Primatives\Vector3.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utils\GeometryUtils.cs" />
   </ItemGroup>

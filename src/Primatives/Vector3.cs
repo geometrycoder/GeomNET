@@ -6,19 +6,25 @@ using System.Threading.Tasks;
 
 namespace GeomNET.Primatives {
 
-    public class Vector : GeometryObject {
+    public class Vector3 : GeometryObject {
 
         double u, v, w;
         bool isUnit;
 
         #region constructors
-        public Vector() {
+        public Vector3() {
             this.u = 0.0d;
             this.v = 0.0d;
             this.w = 0.0d;
         }
 
-        public Vector(double u, double v, double w) {
+        public Vector3(Vector3 v) {
+            this.u = v.U;
+            this.v = v.V;
+            this.w = v.W;
+        }
+
+        public Vector3(double u, double v, double w) {
             this.u = u;
             this.v = v;
             this.w = w;
@@ -26,28 +32,28 @@ namespace GeomNET.Primatives {
         #endregion
 
         #region operator overloading
-        public static Vector operator +(Vector v1, Vector v2) {
+        public static Vector3 operator +(Vector3 v1, Vector3 v2) {
             v1.u += v2.U;
             v1.v += v2.V;
             v1.w += v2.W;
             return v1;
         }
 
-        public static Vector operator -(Vector v1, Vector v2) {
+        public static Vector3 operator -(Vector3 v1, Vector3 v2) {
             v1.u -= v2.U;
             v1.v -= v2.V;
             v1.w -= v2.W;
             return v1;
         }
 
-        public static Vector operator *(Vector v1, Vector v2) {
+        public static Vector3 operator *(Vector3 v1, Vector3 v2) {
             v1.u *= v2.U;
             v1.v *= v2.V;
             v1.w *= v2.W;
             return v1;
         }
 
-        public static Vector operator /(Vector v1, Vector v2) {
+        public static Vector3 operator /(Vector3 v1, Vector3 v2) {
             v1.u /= v2.U;
             v1.v /= v2.V;
             v1.w /= v2.W;
@@ -70,19 +76,19 @@ namespace GeomNET.Primatives {
         #endregion
 
         #region methods
-        public Vector CrossProduct(Vector v) {
+        public Vector3 CrossProduct(Vector3 v) {
 
         }
 
-        public double DotProduct(Vector v) {
+        public double DotProduct(Vector3 v) {
 
         }
 
-        public Vector Negate() {
+        public Vector3 Negate() {
 
         }
 
-        public Vector Normalize() {
+        public Vector3 Normalize() {
 
         }
 

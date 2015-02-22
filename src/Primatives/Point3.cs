@@ -6,18 +6,24 @@ using System.Threading.Tasks;
 
 namespace GeomNET.Primatives {
 
-    public class Point : GeometryObject {
+    public class Point3 : GeometryObject {
         
         double x, y, z;
 
         #region constructors
-        public Point() {
+        public Point3() {
             this.x = 0.0d;
             this.y = 0.0d;
             this.x = 0.0d;
         }
 
-        public Point(double x, double y, double z) {
+        public Point3(Point3 p) {
+            this.x = p.X;
+            this.y = p.Y;
+            this.z = p.Z;
+        }
+
+        public Point3(double x, double y, double z) {
             this.x = x;
             this.y = y;
             this.z = z;
@@ -25,28 +31,28 @@ namespace GeomNET.Primatives {
         #endregion
 
         #region operator overloading
-        public static Point operator +(Point p, Vector v) {
+        public static Point3 operator +(Point3 p, Vector3 v) {
             p.x += v.U;
             p.y += v.V;
             p.z += v.W;
             return p;
         }
 
-        public static Point operator -(Point p, Vector v) {
+        public static Point3 operator -(Point3 p, Vector3 v) {
             p.x -= v.U;
             p.y -= v.V;
             p.z -= v.W;
             return p;
         }
 
-        public static Point operator *(Point p, Vector v) {
+        public static Point3 operator *(Point3 p, Vector3 v) {
             p.x *= v.U;
             p.y *= v.V;
             p.z *= v.W;
             return p;
         }
 
-        public static Point operator /(Point p, Vector v) {
+        public static Point3 operator /(Point3 p, Vector3 v) {
             p.x /= v.U;
             p.y /= v.V;
             p.z /= v.W;
@@ -69,7 +75,7 @@ namespace GeomNET.Primatives {
         #endregion
 
         #region methods
-        public double Distance (Point p) {
+        public double Distance (Point3 p) {
             return Math.Sqrt(Math.Pow(x - p.X, 2.0) + Math.Pow(y - p.Y, 2.0) + Math.Pow(z - p.Z, 2.0));
         }
         #endregion
