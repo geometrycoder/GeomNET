@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GeomNET {
+namespace GeomNET.Primatives {
 
-    public class GeometryObject {
+    public class GeometryObject : IGeometryObject {
     
     }
 }
