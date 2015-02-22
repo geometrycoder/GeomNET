@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace GeomNET.Primatives {
 
-    public class Vector : GeometryElement {
+    public class Vector : GeometryObject {
 
         double u, v, w;
+        bool isUnit;
 
         #region constructors
         public Vector() {
@@ -26,30 +27,30 @@ namespace GeomNET.Primatives {
 
         #region operator overloading
         public static Vector operator +(Vector v1, Vector v2) {
-            v1.x += v2.U;
-            v1.y += v2.V;
-            v1.z += v2.W;
+            v1.u += v2.U;
+            v1.v += v2.V;
+            v1.w += v2.W;
             return v1;
         }
 
         public static Vector operator -(Vector v1, Vector v2) {
-            v1.x -= v2.U;
-            v1.y -= v2.V;
-            v1.z -= v2.W;
+            v1.u -= v2.U;
+            v1.v -= v2.V;
+            v1.w -= v2.W;
             return v1;
         }
 
         public static Vector operator *(Vector v1, Vector v2) {
-            v1.x *= v2.U;
-            v1.y *= v2.V;
-            v1.z *= v2.W;
+            v1.u *= v2.U;
+            v1.v *= v2.V;
+            v1.w *= v2.W;
             return v1;
         }
 
         public static Vector operator /(Vector v1, Vector v2) {
-            v1.x /= v2.U;
-            v1.y /= v2.V;
-            v1.z /= v2.W;
+            v1.u /= v2.U;
+            v1.v /= v2.V;
+            v1.w /= v2.W;
             return v1;
         }
         #endregion
@@ -69,11 +70,23 @@ namespace GeomNET.Primatives {
         #endregion
 
         #region methods
-        public Vector CrossProduct {
+        public Vector CrossProduct(Vector v) {
 
         }
 
-        public double DotProduct {
+        public double DotProduct(Vector v) {
+
+        }
+
+        public Vector Negate() {
+
+        }
+
+        public Vector Normalize() {
+
+        }
+
+        public bool IsUnitLength() {
 
         }
         #endregion

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GeomNET.Primatives {
 
-    public class Point : GeometryElement {
+    public class Point : GeometryObject {
         
         double x, y, z;
 

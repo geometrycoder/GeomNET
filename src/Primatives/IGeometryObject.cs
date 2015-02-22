@@ -5,8 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace GeomNET.Primatives {
-    
-    public class Curve : GeometryObject {
 
+    interface IGeometryObject {
     }
 }
