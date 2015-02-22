@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GeomNET.Utils;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -77,6 +78,24 @@ namespace GeomNET.Primatives {
         #region methods
         public double Distance (Point3 p) {
             return Math.Sqrt(Math.Pow(x - p.X, 2.0) + Math.Pow(y - p.Y, 2.0) + Math.Pow(z - p.Z, 2.0));
+        }
+
+        public bool IsAlmostEqualTo(Point3 p) {
+            return (GeometryUtils.DoubleComp < Math.Abs(this.x - p.X) &&
+                    GeometryUtils.DoubleComp < Math.Abs(this.y - p.Y) &&
+                    GeometryUtils.DoubleComp < Math.Abs(this.z - p.Z));
+        }
+
+        public bool IsAlmostEqualTo(Point3 p, double tol) {
+            return (tol < Math.Abs(this.x - p.X) &&
+                    tol < Math.Abs(this.y - p.Y) &&
+                    tol < Math.Abs(this.z - p.Z));
+        }
+        #endregion
+
+        #region override methods
+        public override string ToString() {
+            return String.Format("Point 3 - {0},{1},{2}", this.x, this.y, this.z);
         }
         #endregion
     }

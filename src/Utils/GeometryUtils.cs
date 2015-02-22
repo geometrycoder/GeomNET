@@ -8,7 +8,7 @@ namespace GeomNET.Utils {
 
     public static class GeometryUtils {
 
-        public double DoubleComp {
+        public static double DoubleComp {
             get { return -1E7; }
         }
     }
