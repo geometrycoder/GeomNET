@@ -12,19 +12,22 @@ namespace GeomNET.Primatives {
         double x, y, z;
 
         #region constructors
-        public Point3() {
+        public Point3()
+            : base() {
             this.x = 0.0d;
             this.y = 0.0d;
             this.x = 0.0d;
         }
 
-        public Point3(Point3 p) {
+        public Point3(Point3 p)
+            : base() {
             this.x = p.X;
             this.y = p.Y;
             this.z = p.Z;
         }
 
-        public Point3(double x, double y, double z) {
+        public Point3(double x, double y, double z)
+            : base() {
             this.x = x;
             this.y = y;
             this.z = z;

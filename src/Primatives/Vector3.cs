@@ -12,19 +12,22 @@ namespace GeomNET.Primatives {
         double u, v, w;
 
         #region constructors
-        public Vector3() {
+        public Vector3()
+            : base() {
             this.u = 0.0d;
             this.v = 0.0d;
             this.w = 0.0d;
         }
 
-        public Vector3(Vector3 v) {
+        public Vector3(Vector3 v)
+            : base() {
             this.u = v.U;
             this.v = v.V;
             this.w = v.W;
         }
 
-        public Vector3(double u, double v, double w) {
+        public Vector3(double u, double v, double w)
+            : base() {
             this.u = u;
             this.v = v;
             this.w = w;

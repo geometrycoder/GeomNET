@@ -8,5 +8,9 @@ namespace GeomNET.Primatives {
 
     public class Line : Curve {
 
+        public Line()
+            : base() {
+
+        }
     }
 }

@@ -8,5 +8,8 @@ namespace GeomNET.Primatives {
     
     public class Curve : GeometryObject {
 
+        public Curve()
+            : base() {
+        }
     }
 }

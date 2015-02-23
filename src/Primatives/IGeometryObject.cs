@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace GeomNET.Primatives {
 
-    interface IGeometryObject {
+    public interface IGeometryObject {
+        int Id { get; }
     }
 }

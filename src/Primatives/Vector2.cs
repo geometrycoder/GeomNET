@@ -14,12 +14,20 @@ namespace GeomNET.Primatives {
         #endregion
 
         #region constructors
-        public Vector2() {
+        public Vector2()
+            : base() {
             this.u = 0.0;
             this.v = 0.0;
         }
 
-        public Vector2(double u, double v) {
+        public Vector2(Vector2 v)
+            : base() {
+            this.u = v.U;
+            this.v = v.V;
+        }
+
+        public Vector2(double u, double v)
+            : base() {
             this.u = u;
             this.v = v;
         }
