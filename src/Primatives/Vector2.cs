@@ -90,7 +90,9 @@ namespace GeomNET.Primatives {
         #endregion
 
         #region override methods
-
+        public override string ToString() {
+            return String.Format("Vector 2 - {0},{1}", this.u, this.v);
+        }
         #endregion
     }
 }
