@@ -90,7 +90,7 @@ namespace GeomNET.Primatives {
             get { return Math.Atan2(this.u, this.w); }
         }
         #endregion
-
+        
         #region methods
         public Vector3 CrossProduct(Vector3 v) {
             double newU = this.v * this.w;

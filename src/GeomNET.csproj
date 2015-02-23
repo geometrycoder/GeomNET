@@ -39,6 +39,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Collections\Curves.cs" />
+    <Compile Include="Collections\Points.cs" />
     <Compile Include="Primatives\Curve.cs" />
     <Compile Include="Primatives\GeometryObject.cs" />
     <Compile Include="Primatives\IGeometryObject.cs" />
