@@ -8,8 +8,10 @@ using System.Threading.Tasks;
 namespace GeomNET.Primatives {
 
     public class Point3 : GeometryObject {
-        
+
+        #region members
         double x, y, z;
+        #endregion
 
         #region constructors
         public Point3()

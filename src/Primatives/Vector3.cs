@@ -9,7 +9,9 @@ namespace GeomNET.Primatives {
 
     public class Vector3 : GeometryObject {
 
+        #region members
         double u, v, w;
+        #endregion
 
         #region constructors
         public Vector3()
