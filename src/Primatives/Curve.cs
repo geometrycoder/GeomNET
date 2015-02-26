@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 namespace GeomNET.Primatives {
     
     public class Curve : GeometryObject {
+
         #region members
         protected Point3 strPt;
         protected Point3 endPt;

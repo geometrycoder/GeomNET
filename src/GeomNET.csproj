@@ -44,11 +44,14 @@
     <Compile Include="GeometryData\Enum.cs" />
     <Compile Include="GeometryData\IntersectionResult.cs" />
     <Compile Include="GeometryData\Transform.cs" />
+    <Compile Include="Primatives\Arc.cs" />
     <Compile Include="Primatives\Curve.cs" />
+    <Compile Include="Primatives\Ellipse.cs" />
     <Compile Include="Primatives\GeometryObject.cs" />
     <Compile Include="Primatives\IGeometryObject.cs" />
     <Compile Include="Primatives\Line.cs" />
     <Compile Include="Primatives\Point3.cs" />
+    <Compile Include="Primatives\Spline.cs" />
     <Compile Include="Primatives\Vector2.cs" />
     <Compile Include="Primatives\Vector3.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
