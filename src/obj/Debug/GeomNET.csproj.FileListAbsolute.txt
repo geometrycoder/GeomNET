@@ -1,5 +1,4 @@
 C:\Users\Michael Kero\Documents\Automata\git\GeometryCoder\GeomNET\src\bin\Debug\GeomNET.dll
 C:\Users\Michael Kero\Documents\Automata\git\GeometryCoder\GeomNET\src\bin\Debug\GeomNET.pdb
-C:\Users\Michael Kero\Documents\Automata\git\GeometryCoder\GeomNET\src\obj\Debug\GeomNET.csprojResolveAssemblyReference.cache
 C:\Users\Michael Kero\Documents\Automata\git\GeometryCoder\GeomNET\src\obj\Debug\GeomNET.dll
 C:\Users\Michael Kero\Documents\Automata\git\GeometryCoder\GeomNET\src\obj\Debug\GeomNET.pdb

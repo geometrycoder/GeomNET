@@ -7,33 +7,46 @@ using System.Threading.Tasks;
 
 namespace GeomNET.Primatives {
     
-    public class Curve : GeometryObject {
+    public abstract class Curve : GeometryObject {
 
-        #region members
-        protected Point3 strPt;
-        protected Point3 endPt;
+        #region member
+        protected bool isBound;
+        protected double strParam;
+        protected double endParam;
+
         #endregion
 
         #region constructors
         public Curve()
             : base() {
+            this.isBound = false;
+            this.strParam = Double.MinValue;
+            this.endParam = Double.MaxValue;
         }
         #endregion
 
         #region properties
+        public bool IsBound {
+            get { return this.isBound; }
+        }
+
+        public double StartParameter {
+            get { return this.strParam; }
+        }
+
+        public double EndParameter {
+            get { return this.endParam; }
+        }
+
         public virtual Point3 StartPoint {
-            get { return this.strPt; }
+            get { return null; }
         }
 
         public virtual Point3 EndPoint {
-            get { return this.endPt; }
+            get { return null; }
         }
 
-        public virtual double StartParameter {
-            get { throw new NotImplementedException(); }
-        }
-
-        public virtual double EndParameter {
+        public virtual double Length {
             get { throw new NotImplementedException(); }
         }
         #endregion

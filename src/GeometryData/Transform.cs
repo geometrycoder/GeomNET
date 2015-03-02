@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace GeomNET.GeometryData {
-    class Transform {
+
+    public class Transform {
+
     }
 }

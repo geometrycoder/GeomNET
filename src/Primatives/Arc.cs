@@ -7,6 +7,31 @@ using System.Threading.Tasks;
 namespace GeomNET.Primatives {
 
     public class Arc : Curve {
+        
+        #region members
+        
+        #endregion
 
+        #region constructors
+        public Arc()
+            : base() {
+            this.isBound = true;
+        }
+        #endregion
+
+        #region properties
+        
+        #endregion
+
+        #region methods
+        public override Point3 Evaluate(double param, bool normaized) {
+            //Evaluation: P(u) = C + r ( nx cos(u) + ny sin(u) )
+            return base.Evaluate(param, normaized);
+        }
+        #endregion
+
+        #region override methods
+
+        #endregion
     }
 }

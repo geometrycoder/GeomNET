@@ -44,11 +44,33 @@ namespace GeomNET.Primatives {
             return v1;
         }
 
+        public static Vector3 operator +(Vector3 v1, double val) {
+            v1.u += val;
+            v1.v += val;
+            v1.w += val;
+            return v1;
+        }
+
+        public static Vector3 operator +(double val, Vector3 v1) {
+            return v1 + val;
+        }
+
         public static Vector3 operator -(Vector3 v1, Vector3 v2) {
             v1.u -= v2.U;
             v1.v -= v2.V;
             v1.w -= v2.W;
             return v1;
+        }
+
+        public static Vector3 operator -(Vector3 v1, double val) {
+            v1.u -= val;
+            v1.v -= val;
+            v1.w -= val;
+            return v1;
+        }
+
+        public static Vector3 operator -(double val, Vector3 v1) {
+            return v1 - val;
         }
 
         public static Vector3 operator *(Vector3 v1, Vector3 v2) {
@@ -58,11 +80,33 @@ namespace GeomNET.Primatives {
             return v1;
         }
 
+        public static Vector3 operator *(Vector3 v1, double val) {
+            v1.u *= val;
+            v1.v *= val;
+            v1.w *= val;
+            return v1;
+        }
+
+        public static Vector3 operator *(double val, Vector3 v1) {
+            return v1 * val;
+        }
+
         public static Vector3 operator /(Vector3 v1, Vector3 v2) {
             v1.u /= v2.U;
             v1.v /= v2.V;
             v1.w /= v2.W;
             return v1;
+        }
+
+        public static Vector3 operator /(Vector3 v1, double val) {
+            v1.u /= val;
+            v1.v /= val;
+            v1.w /= val;
+            return v1;
+        }
+
+        public static Vector3 operator /(double val, Vector3 v1) {
+            return v1 / val;
         }
         #endregion
 

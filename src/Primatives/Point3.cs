@@ -37,11 +37,25 @@ namespace GeomNET.Primatives {
         #endregion
 
         #region operator overloading
+        public static Vector3 operator +(Point3 p1, Point3 p2) {
+            double u = p1.x += p2.X;
+            double v = p1.y += p2.Y;
+            double w = p1.z += p2.Z;
+            return new Vector3(u, v, w);
+        }
+
         public static Point3 operator +(Point3 p, Vector3 v) {
             p.x += v.U;
             p.y += v.V;
             p.z += v.W;
             return p;
+        }
+
+        public static Vector3 operator -(Point3 p1, Point3 p2) {
+            double u = p1.x -= p2.X;
+            double v = p1.y -= p2.Y;
+            double w = p1.z -= p2.Z;
+            return new Vector3(u, v, w);
         }
 
         public static Point3 operator -(Point3 p, Vector3 v) {
@@ -51,11 +65,25 @@ namespace GeomNET.Primatives {
             return p;
         }
 
+        public static Vector3 operator *(Point3 p1, Point3 p2) {
+            double u = p1.x *= p2.X;
+            double v = p1.y *= p2.Y;
+            double w = p1.z *= p2.Z;
+            return new Vector3(u, v, w);
+        }
+
         public static Point3 operator *(Point3 p, Vector3 v) {
             p.x *= v.U;
             p.y *= v.V;
             p.z *= v.W;
             return p;
+        }
+
+        public static Vector3 operator /(Point3 p1, Point3 p2) {
+            double u = p1.x /= p2.X;
+            double v = p1.y /= p2.Y;
+            double w = p1.z /= p2.Z;
+            return new Vector3(u, v, w);
         }
 
         public static Point3 operator /(Point3 p, Vector3 v) {
@@ -78,10 +106,14 @@ namespace GeomNET.Primatives {
         public double Z {
             get { return z; }
         }
+
+        public Vector3 AsVector {
+            get { return new Vector3(this.x, this.y, this.z); }
+        }
         #endregion
 
         #region methods
-        public double Distance (Point3 p) {
+        public double DistanceTo (Point3 p) {
             return Math.Sqrt(Math.Pow(x - p.X, 2.0) + Math.Pow(y - p.Y, 2.0) + Math.Pow(z - p.Z, 2.0));
         }
 

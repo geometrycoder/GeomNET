@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace GeomNET.GeometryData {
-    class IntersectionResult {
+
+    public class IntersectionResult {
+
     }
 }
