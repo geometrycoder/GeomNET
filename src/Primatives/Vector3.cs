@@ -174,10 +174,14 @@ namespace GeomNET.Primatives {
 
         public Vector3 Normalize() {
             double mag = this.Magnitude;
-            double newU = this.u / mag;
-            double newV = this.v / mag;
-            double newW = this.w / mag;
-            return new Vector3(newU, newV, newW);
+            if (GeometryUtils.DoubleComp < mag) {
+                double newU = this.u / mag;
+                double newV = this.v / mag;
+                double newW = this.w / mag;
+                return new Vector3(newU, newV, newW);
+            } else {
+                throw new InvalidOperationException("Magitude fo vector is too small.");
+            }
         }
         #endregion
 

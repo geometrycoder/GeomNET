@@ -50,6 +50,7 @@
     <Compile Include="Primatives\GeometryObject.cs" />
     <Compile Include="Primatives\IGeometryObject.cs" />
     <Compile Include="Primatives\Line.cs" />
+    <Compile Include="Primatives\Plane.cs" />
     <Compile Include="Primatives\Point3.cs" />
     <Compile Include="Primatives\Spline.cs" />
     <Compile Include="Primatives\Vector2.cs" />
