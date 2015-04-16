@@ -180,7 +180,7 @@ namespace GeomNET.Primatives {
                 double newW = this.w / mag;
                 return new Vector3(newU, newV, newW);
             } else {
-                throw new InvalidOperationException("Magitude fo vector is too small.");
+                throw new InvalidOperationException("Magitude of vector is too small.");
             }
         }
         #endregion

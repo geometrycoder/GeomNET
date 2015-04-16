@@ -13,7 +13,6 @@ namespace GeomNET.Primatives {
         protected bool isBound;
         protected double strParam;
         protected double endParam;
-
         #endregion
 
         #region constructors

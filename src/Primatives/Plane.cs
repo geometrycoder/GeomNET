@@ -10,21 +10,21 @@ namespace GeomNET.Primatives {
 
         Point3 orig;
         Vector3 norm;
-        Vector3 xVec;
-        Vector3 yVec;
+        Vector3 uVec;
+        Vector3 vVec;
 
         public Plane(Point3 orig, Vector3 norm) {
             this.orig = orig;
             this.norm = norm;
-            this.xVec = new Vector3(norm.U, 0, 0);
-            this.yVec = new Vector3(0, norm.V, 0);
+            this.uVec = new Vector3(norm.U, 0, 0);
+            this.vVec = new Vector3(0, norm.V, 0);
         }
 
-        public Plane(Point3 orig, Vector3 xVec, Vector3 yVec) {
+        public Plane(Point3 orig, Vector3 uVec, Vector3 vVec) {
             this.orig = orig;
-            this.norm = xVec.CrossProduct(yVec);
-            this.xVec = xVec;
-            this.yVec = yVec;
+            this.norm = uVec.CrossProduct(vVec);
+            this.uVec = uVec;
+            this.vVec = vVec;
         }
 
         public Point3 Origin {
