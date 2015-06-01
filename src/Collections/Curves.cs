@@ -1,4 +1,4 @@
-﻿using GeomNET.Primatives;
+﻿using GeomNET.GeometricPrimatives;
 using System;
 using System.Collections.Generic;
 using System.Linq;

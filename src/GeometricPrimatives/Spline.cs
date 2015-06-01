@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GeomNET.Primatives {
+namespace GeomNET.GeometricPrimatives {
 
-    public interface IGeometryObject {
-        int Id { get; }
+    public class Spline : Curve {
+
     }
 }

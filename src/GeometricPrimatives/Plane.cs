@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GeomNET.Primatives {
+namespace GeomNET.GeometricPrimatives {
     
     public class Plane : GeometryObject {
 

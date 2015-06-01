@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GeomNET.Primatives {
+namespace GeomNET.GeometricPrimatives {
 
     public class Point3 : GeometryObject {
 
