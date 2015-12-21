@@ -50,7 +50,6 @@
     <Compile Include="Collections\Points.cs" />
     <Compile Include="GeometryData\Enum.cs" />
     <Compile Include="GeometryData\IntersectionResult.cs" />
-    <Compile Include="GeometryData\Matrix.cs" />
     <Compile Include="GeometryData\Transform.cs" />
     <Compile Include="GeometricPrimatives\Arc.cs" />
     <Compile Include="GeometricPrimatives\Curve.cs" />
